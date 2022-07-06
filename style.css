@@ -63,4 +63,19 @@ table {
     margin-left: 20px;
 }
 
+@media (max-width: 768px)  {
+    form {
+        flex-direction: column;
+    }
+    aside {
+        display:none;
+    }
+    table {
+        float: none;
+     }
+
+    main {
+        text-align: left;
+    }
+}
 

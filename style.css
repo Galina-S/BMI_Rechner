@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Love+Ya+Like+A+Sister&family=Maven+Pro:wght@400;600&family=Montserrat&family=Oswald&family=Roboto+Mono:wght@100;200&display=swap');
+
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    text-align: justify;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+h1, h2, h3 {
+    text-align: center;
+    color: rgb(91, 0, 177);
+}
+
+aside {
+    float: left;
+    padding: 20px;
+}
+
+form {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+button:hover, input:hover {
+    background-color: rgb(54, 179, 5);
+    color: white;
+}
+
+input, label, button {
+    margin: 8px;
+}
+
+label {
+    font-weight: bold;
+}
+
+button {
+    padding: 10px;
+    font-size: large;
+}
+
+table, th, td  {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+table {
+    width:20%;
+    float: right;
+    margin-left: 20px;
+}
+
+

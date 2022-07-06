@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>project-BMI</title>
+</head>
+<body>
+    <main>
+        <h1>BMI-Rechner - Body Mass Index berechnen </h1>
+
+        <p> Der <strong> BMI (Body Mass Index) </strong>ist ein Maß für die Bewertung des Körpergewichts, indem er das Gewicht in Relation zu der Körpergröße setzt. Aufgrund der einfachen Messung ist die Berechnung des BMI das am häufigsten verwendete Diagnoseverfahren zur Einordnung der Körperlast. Anhand des ermittelten BMI-Werts lässt sich schnell aussagen, ob eine Person Normalgewicht, Übergewicht oder Untergewicht hat.</p>
+
+        <h2>Der BMI und seine Berechnung</h2>
+
+        <p>Auch wenn der BMI keine Körperfettanteile berücksichtigt, ist er noch immer das geeigneteste Verfahren zu Gewichtsbewertung und liefert für erwachsene Personen, die weder besonders große Muskelmasse noch Amputationen aufweisen, verlässliche Ergebnisse.</p>
+
+        <aside><img src="images/bmi-gewichtsklassen.png" alt=""></aside>
+
+        <h2>Formel zur Berechnung des BMI</h2>
+
+        <p>Zu Berechnung des Body Mass Indexes wird die relativ einfache BMI-Formel angewandt: </p>
+        <p><strong>BMI=(Gewicht in kg)/(Körpergroße in m)² </strong>.</p>
+        <p>Der errechnete Wert muss anschließend mit einer Wertetabelle abgeglichen werden, um auswerten zu können, ob eine Person normalgewichtig, übergewichtig oder untergewichtig ist. Die WHO hat hierfür besondere Grenzen definiert, wobei sich für Männer und Frauen unterschiedliche Ergebnisse ergeben. Eine solche Auswertung erhalten Sie in den Ergebnissen nach dem Ausfüllen und Ausführen des BMI-Rechners. </p>
+
+        <h2>BMI-Tabelle nach Alter</h2>
+        <table>
+            <tr>
+                <th>Alter</th>
+                <th>BMI Normalbereich</th>
+            </tr>
+            <tr>
+                <td>19-24</td>
+                <td>19-24</td>
+            </tr>
+            <tr>
+                <td>25-34</td>
+                <td>20-25</td>
+            </tr>
+            <tr>
+                <td>35-44</td>
+                <td>21-26</td>
+            </tr>
+            <tr>
+                <td>45-54</td>
+                <td>22-27</td>
+            </tr>
+            <tr>
+                <td>55-64</td>
+                <td>23-28</td>
+            </tr>
+            <tr>
+                <td>>=65</td>
+                <td>24-29</td>
+            </tr>
+
+        </table>
+
+        <p>Die nebenstehende Tabelle zeigt für die verscheidenen Altersgruppen die BMI-Werte innerhalb des Normalbereichs an. Sollten Ihr BMI höher sein als in der Tabelle aufgeführt, leiden sie an Übergewicht. Werte unterhalb des definierten Bereichs deuten auf Untergewicht hin.
+        Die Grenzen wurden von der WHO (Weltgesundheitsorganisation) festgelegt.
+            Für Jugendliche und Kinder gelten andere BMI-Werte.</p>
+        <form action="javascript:run()">
+            <label for="weight">Gewicht (in kg):</label>
+            <input type="number" id="weight" placeholder="kg" required step="0.01" min="0">
+
+            <label for="height">Größe (in cm):</label>
+            <input type="number" id="height" placeholder="cm" required min="40">
+            <p id="BMI" ></p>
+            <button type="submit">BMI berechnen</button>
+        </form>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
